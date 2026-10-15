@@ -25,13 +25,19 @@ so they also work under a repository path or a custom domain.
 
 ## Maintenance
 
-The initial app description and privacy text reflect the local TabataApp source and
-its documentation reviewed on October 15, 2026: local workout/settings/recovery storage,
-optional notifications and speech, and an ad placeholder without live advertising.
-Before publishing a new app version, compare the policy against that release, especially
-if adding advertising, analytics, crash reporting, accounts, or network services. Update
-the policy date when its content changes. Store availability is intentionally not claimed
-on the homepage until a listing is confirmed.
+The privacy policy was expanded on October 15, 2026 for planned Google AdMob banners,
+including personalized ads only where permitted and consented to, for a general adult audience.
+It distinguishes ad-supported versions from the current placeholder-only app. It covers SDK data,
+ad purposes/providers, consent and withdrawal, regional choices, retention/deletion, security,
+transfers, and rights, with links to official Google resources.
+
+Implementation handoff lives in the actual app source repository at
+`../TabataApp/DOCS/ADS_AND_PRIVACY.md` (currently `C:\DEV\TabataApp\DOCS\ADS_AND_PRIVACY.md`).
+That guide records research sources, product decisions, implementation entry points, and release checks.
+The SDK, consent flow, Privacy choices action, regional opt-outs, and Play declarations still need
+implementation/configuration before production ads. Keep the policy aligned with the shipped SDK
+and actual account settings; adding mediation or other collection requires another review.
+Store availability is not claimed on the homepage until a listing is confirmed.
 
 Keep each product's policy separate; do not copy disclosures about another app's SDKs.
 Support currently uses `sinsoftstudios@gmail.com`, matching the Kitty Catty Go site.
